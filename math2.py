@@ -1,16 +1,32 @@
 #This app does your math
 
-print("If you want addition say yes, if you dont say no.")
 
-addition = input("")
+addition = input("Print your math sign, +, -, *, /: ")
 
-print("  ")
-print("Enter your 2nd number")
-second = input("")
+if addition == "+":
+    a = int(input("First Number: "))
+    b = int(input("Seccond Number: "))
+    c = a + b
+    print(c)
 
-answer = first + second
+elif addition == "-":
+    a = int(input("First Number: "))
+    b = int(input("Seccond Number: "))
+    c = a - b
+    print(c)
 
-print("  ")
-print(answer)
+elif addition == "*":
+    a = int(input("First Number: "))
+    b = int(input("Seccond Number: "))
+    c = a * b
+    print(c)
 
-print("  ")
+elif addition == "/":
+    a = int(input("First Number: "))
+    b = int(input("Seccond Number: "))
+    c = a / b
+    print(c)
+
+
+else:
+    print("That is not a valid operation. Please do +, -, *, /")
